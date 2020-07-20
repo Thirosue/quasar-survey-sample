@@ -18,23 +18,9 @@ export default {
   components: {
     linearProgress
   },
-
-  data() {
-    return {
-      step: ''
-    }
-  },
-  methods: {
-    toTop() {
-      this.$router.push('/')
-    },
-    stepSet() {
-      return this.$route.path
-    }
-  },
   computed: {
     showProgress() {
-      return this.$route.path !== '/question/result'
+      return this.$route.path !== '/result'
     },
     currentQuestionNumber() {
       switch (this.$route.path) {

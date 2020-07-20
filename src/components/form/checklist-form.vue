@@ -55,10 +55,6 @@ export default {
       default: null
     }
   },
-  mounted() {
-    console.log(this.int)
-    this.mounted = this.int
-  },
   watch: {},
   methods: {
     handleDisable(value) {

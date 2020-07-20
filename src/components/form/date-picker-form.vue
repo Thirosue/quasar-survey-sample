@@ -1,7 +1,7 @@
 <template>
   <LeftArticle>
     <template v-slot:head>
-      <slot name='head'></slot>
+      <slot name="head"></slot>
     </template>
     <template v-slot:body>
       <div class="q-pa-md" style="max-width: 300px">
@@ -37,16 +37,12 @@ export default {
       required: true
     }
   },
-
-  mounted () {
-    this.mounted = this.init
-  },
   computed: {
     model: {
-      get () {
+      get() {
         return this.value
       },
-      set (value) {
+      set(value) {
         console.log(value)
         this.$emit('input', value)
       }

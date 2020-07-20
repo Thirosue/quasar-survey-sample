@@ -31,12 +31,8 @@ export default {
       default: ''
     },
     value: {
-      // type: String,
       required: true
     }
-  },
-  data() {
-    return {}
   },
   watch: {},
   computed: {

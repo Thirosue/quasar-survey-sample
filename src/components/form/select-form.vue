@@ -38,13 +38,8 @@ export default {
       default: '選択してください'
     },
     value: {
-      // type: String,
       required: true
     }
-  },
-
-  mounted() {
-    this.mounted = this.init
   },
   watch: {},
   computed: {

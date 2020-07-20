@@ -16,10 +16,10 @@ export default {
     maxNumber: Number
   },
   computed: {
-    progress () {
-      return (this.currentNumber / this.maxNumber)
+    progress() {
+      return this.currentNumber / this.maxNumber
     },
-    progressLabel () {
+    progressLabel() {
       return `${this.currentNumber} / ${this.maxNumber}`
     }
   }

@@ -37,9 +37,6 @@ export default {
       required: true
     }
   },
-  data() {
-    return {}
-  },
   watch: {},
   computed: {
     model: {

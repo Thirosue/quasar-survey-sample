@@ -43,9 +43,6 @@ export default {
       required: true
     }
   },
-  mounted() {
-    this.mounted = this.int
-  },
   watch: {},
   computed: {
     model: {
