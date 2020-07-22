@@ -66,5 +66,8 @@ describe('SelectFormTest', () => {
     dropdownIcon.trigger('click')
     await flushPromises()
     // TODO リストの表示確認
+    // コンポーネントの外に要素を追加するため、要素を取得できない
+    // const menu = window.document.querySelector('.q-menu')
+    console.log(window.document.body.innerText)
   })
 })

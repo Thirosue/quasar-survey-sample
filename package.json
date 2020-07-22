@@ -17,7 +17,10 @@
     "test:unit:watchAll": "jest --watchAll",
     "serve:test:coverage": "quasar serve test/jest/coverage/lcov-report/ --port 8788",
     "concurrently:dev:jest": "concurrently \"quasar dev\" \"jest --watch\"",
-    "test:unit:ui": "majestic"
+    "test:unit:ui": "majestic",
+    "test:e2e": "cypress open",
+    "test:e2e:CI": "cypress run cypress run --reporter mochawesome --reporter-options 'reportDir=test/cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss'",
+    "test:e2e:report:merge": "mochawesome-merge 'test/cypress/report/mochawesome-report/*.json' > test/cypress/report/mochawesome.json"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -29,11 +32,14 @@
   "devDependencies": {
     "@quasar/app": "^2.0.0",
     "@quasar/quasar-app-extension-testing": "^1.0.0",
+    "@quasar/quasar-app-extension-testing-e2e-cypress": "^1.0.0-beta.11",
     "@quasar/quasar-app-extension-testing-unit-jest": "^1.0.1",
     "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-loader": "^3.0.3",
+    "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.1",
@@ -41,6 +47,11 @@
     "eslint-plugin-vue": "^6.1.2",
     "jest": "^26.1.0",
     "majestic": "^1.2.24",
+    "mocha": "^8.0.1",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "puppeteer": "^5.2.1",
     "wallaby-vue-compiler": "^1.0.3",
     "workbox-webpack-plugin": "^5.0.0"
   },

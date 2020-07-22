@@ -48,3 +48,11 @@ amplifyconfiguration.json
 amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
+
+#unit
+test/jest/coverage/
+
+#e2e
+e2e/*png
+test/cypress/report
+test/cypress/videos

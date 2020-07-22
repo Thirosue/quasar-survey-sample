@@ -12,5 +12,10 @@
       "wallabyjs",
       "majestic"
     ]
+  },
+  "@quasar/testing-e2e-cypress": {
+    "options": [
+      "scripts"
+    ]
   }
 }

@@ -1,23 +1,21 @@
 <template>
-  <q-page>
-    <LeftArticle class="q-pa-md">
-      <template v-slot:head>
-        Q4. 「XXX」について、ご覧になってどのように感じましたか。<br />それぞれお知らせください。
-      </template>
-    </LeftArticle>
-
-    <ButtonGroup to="Q4-1" />
-  </q-page>
+  <DefaultLayOut
+    q="Q4. 「XXX」について、ご覧になってどのように感じましたか。<br />それぞれお知らせください。"
+  >
+    <template v-slot:content>
+      <ButtonGroup to="Q4-1" />
+    </template>
+  </DefaultLayOut>
 </template>
 
 <script>
-import LeftArticle from 'layouts/left-article'
+import DefaultLayOut from '../../layouts/default-layout.vue'
 import { ButtonGroup } from '../../components/button'
 
 export default {
   name: 'Q4-description',
   components: {
-    LeftArticle,
+    DefaultLayOut,
     ButtonGroup
   }
 }

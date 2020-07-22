@@ -35,8 +35,8 @@ const values = { // 回答内容
   wantToBuy: '', // Q4-4 買いたい
   WhatKindOfAction: [], // Q5 その後どうした？
   sex: '', // Q6 性別
-  age: [], // Q7 年齢
-  prefectures: [], // Q8 都道府県
+  age: '', // Q7 年齢
+  prefectures: '', // Q8 都道府県
   freeComment: null, // フリーコメント
 };
 

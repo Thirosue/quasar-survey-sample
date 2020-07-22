@@ -18,11 +18,11 @@
         </div>
       </template>
     </EvenlyArticle>
-    <div>
+    <div v-if="bgColor === 'red'">
       <div class="content">
         <div class="q-pa-md">
           <div class="row justify-start text-h7">
-            <div v-if="bgColor === 'red'" class="self-center">
+            <div class="q-validation-error self-center">
               <font color="red">選択してください。</font>
             </div>
           </div>

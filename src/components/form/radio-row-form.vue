@@ -14,7 +14,7 @@
       <div class="content">
         <div class="q-pa-md">
           <div class="row justify-start text-h7">
-            <div class="self-center">
+            <div class="q-validation-error self-center">
               <font color="red">選択してください。</font>
             </div>
           </div>

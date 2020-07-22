@@ -9,6 +9,7 @@ frontend:
     build:
       commands:
         - yarn
+        - yarn test:unit
         - yarn build
   artifacts:
     # IMPORTANT - Please verify your build output directory
@@ -18,3 +19,24 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+test:
+  artifacts:
+    baseDirectory: /test/cypress
+    configFilePath: '**/mochawesome.json'
+    files:
+      - '**/*.png'
+      - '**/*.mp4'
+  phases:
+    preBuild:
+      commands:
+        - nvm use stable #安定版を利用
+        - curl -o- -L https://yarnpkg.com/install.sh | bash #安定版を再インストール
+        - yarn
+        - yarn add wait-on
+        - yarn serve & npx wait-on http://localhost:8080
+    test:
+      commands:
+        - yarn test:e2e:CI
+    postTest:
+      commands:
+        - yarn test:e2e:report:merge

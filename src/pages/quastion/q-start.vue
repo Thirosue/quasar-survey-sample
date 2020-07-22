@@ -1,24 +1,25 @@
 <template>
-  <q-page>
-    <LeftArticle class="q-pa-md">
-      <template v-slot:head>
-        次へを押してアンケートを開始してください。
-      </template>
-    </LeftArticle>
-
-    <single-button to="Q1" body="次へ" />
-  </q-page>
+  <DefaultLayOut>
+    <template v-slot:content>
+      <div class="row justify-start text-h6">
+        <div class="s-top-message self-center">
+          次へを押してアンケートを開始してください。
+        </div>
+      </div>
+      <single-button to="Q1" body="次へ" />
+    </template>
+  </DefaultLayOut>
 </template>
 
 <script>
 import { FORM_MUTATION_TYPES } from 'src/store/modules/form'
-import LeftArticle from 'layouts/left-article'
+import DefaultLayOut from '../../layouts/default-layout.vue'
 import { SingleButton } from '../../components/button'
 
 export default {
   name: 'Q1-description',
   components: {
-    LeftArticle,
+    DefaultLayOut,
     SingleButton
   },
 

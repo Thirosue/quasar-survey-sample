@@ -1,5 +1,5 @@
 <template>
-  <q-btn color="primary" :to="to" size="22px" :style="styleAttr" @click="click" push>
+  <q-btn class="primary-btn" color="primary" :to="to" size="22px" :style="styleAttr" @click="click" push>
     <div class="row items-center no-wrap">
       <div class="text-center">
         <slot name="body"></slot>

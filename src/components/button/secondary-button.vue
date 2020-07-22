@@ -1,11 +1,19 @@
 <template>
-    <q-btn color="grey-5" text-color="black" size="22px" style="width: 120px" @click="click" push>
-      <div class="row items-center no-wrap">
-        <div class="text-center">
-          <slot name='body'></slot>
-        </div>
+  <q-btn
+    class="secondary-btn"
+    color="grey-5"
+    text-color="black"
+    size="22px"
+    style="width: 120px"
+    @click="click"
+    push
+  >
+    <div class="row items-center no-wrap">
+      <div class="text-center">
+        <slot name="body"></slot>
       </div>
-    </q-btn>
+    </div>
+  </q-btn>
 </template>
 
 <script>
