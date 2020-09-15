@@ -41,7 +41,7 @@ const values = { // 回答内容
 };
 
 export const state = {
-  values,
+  values: { ...{}, ...values },
 };
 export const getKeys = () => {
   const arr = Object.keys(state.values);
