@@ -51,7 +51,7 @@
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
     "mochawesome-report-generator": "^5.1.0",
-    "puppeteer": "^5.2.1",
+    "puppeteer": "5.5.0",
     "wallaby-vue-compiler": "^1.0.3",
     "workbox-webpack-plugin": "^5.0.0"
   },
