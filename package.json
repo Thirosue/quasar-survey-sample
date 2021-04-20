@@ -23,7 +23,7 @@
     "test:e2e:report:merge": "mochawesome-merge 'test/cypress/report/mochawesome-report/*.json' > test/cypress/report/mochawesome.json"
   },
   "dependencies": {
-    "@quasar/extras": "^1.0.0",
+    "@quasar/extras": "1.10.4",
     "core-js": "^3.6.5",
     "flush-promises": "^1.0.2",
     "quasar": "^1.0.0",
