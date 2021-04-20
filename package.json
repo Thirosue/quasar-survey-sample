@@ -48,7 +48,7 @@
     "jest": "^26.1.0",
     "majestic": "^1.2.24",
     "mocha": "^8.0.1",
-    "mochawesome": "^6.1.1",
+    "mochawesome": "6.2.2",
     "mochawesome-merge": "^4.1.0",
     "mochawesome-report-generator": "^5.1.0",
     "puppeteer": "^5.2.1",
