@@ -46,7 +46,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
     "jest": "^26.1.0",
-    "majestic": "^1.2.24",
+    "majestic": "1.8.0",
     "mocha": "^8.0.1",
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
