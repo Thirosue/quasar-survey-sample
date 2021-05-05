@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "core-js": "^3.6.5",
+    "core-js": "3.11.3",
     "flush-promises": "^1.0.2",
     "quasar": "^1.0.0",
     "vuex-persistedstate": "^3.0.1"
